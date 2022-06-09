@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+.topbar{
+    background-color: #0C3169;
+    padding: 12px 0;
+}
+.topbar ul.accessibility-icons{
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    list-style: none;
+    align-items: center;
+}
+.topbar ul.accessibility-icons li:first-child{
+    border: 0px;
+}
+.topbar ul.accessibility-icons li{
+    border-left: 1px solid #FFC700;
+    padding: 0px 8px;
+    font-size: 14px;
+    color: #FFC700;
+}
+.topbar ul.accessibility-icons li a{
+    color: #FFC700;
+    font-size: 13px;
+    letter-spacing: 0.15px;
+}
+.topbar ul.accessibility-icons li.search{
+
+}
+.topbar ul.accessibility-icons li.search a{
+    font-size: 18px;
+    margin-top: -4px;
+    display: block;
+}
+.topbar ul.accessibility-icons li.skip-content{
+
+}
+.topbar ul.accessibility-icons li.screen-reader a{
+    padding: 2px 7px;
+    border: 1px solid #FFC700;
+    border-radius: 4px;
+}
+.topbar ul.accessibility-icons li.screen-reader span{
+    color: #FFC700;
+    margin-right: 12px;
+} 
+
+.topbar ul.accessibility-icons li.language a{
+    padding: 4px 22px 4px 8px;
+    border-radius: 4px;
+    background: #209AED url(../img/arrow-down.svg) no-repeat;
+    color: #fff;
+    font-weight: 500;
+    background-position: 100% 0%;
+}
+
+
+/* header bar css */
+
+.header-wrapper .minister  a {
+    display: inline-flex;
+    align-items: center;
+}
+.header-wrapper .minister  a .text{
+    color: #393939;
+}
+a.brand{
+    display: block;
+    padding: 14px 0;
+}
+.header-search{
+    width: 400px;
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    margin-top: 33px;
+    
+}
+.header-search input{
+    width: 100%;
+    padding: 13px 15px;
+    border-radius: 48px;
+    background-color: #E0ECFE;
+    border: 0px;
+}
+.header-search button{
+    position: absolute;
+    display: block;
+    background: #209aed;
+    border: 0;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    top: 0px;
+    right: 1px;
+}
+
+/* navigation-bar */
+.navigation-bar{
+    background-color: #0C3169;
+}
+.navigation-bar .navbar{
+    padding: 0px;
+}
+.navigation-bar .nav-item.active a, .navigation-bar .nav-item a:hover{
+    background-color: #209aed;
+    transition: 0.25px;
+}
+.navigation-bar .navbar .nav-link{
+    color: #fff;
+    padding: 11px 12px;
+    position: relative;
+    transition: 0.25px;
+}
+.right-aligned-menu a.nav-link{
+    background-color: #FFCC1D;
+}
+.right-aligned-menu a.nav-link span{
+    color: #222E2B;
+    font-weight: 500;
+}
+.right-aligned-menu a.nav-link:hover:before{
+    display: none;
+}
+
+.inner-banner-sec {
+    background-image: url(../img/law_inner-banner.jpg);
+    width: 100%;
+    background-size: cover;
+    padding: 40px 0 40px 0;
+}
+.inner-banner-sec h4 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    padding-left: 0px;
+}
+.inner-banner-sec ol {
+    margin: 0;
+    padding: 0;
+}
+.inner-banner-sec li,
+.inner-banner-sec li a {
+    color: #f2f8fb;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+    padding-right: 10px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.inner-banner-sec li:before {
+    content: " \BB ";
+    display: block;
+    color: #fff;
+    position: absolute;
+    width: 10px;
+    height: 28px;
+    font-size: 16px;
+    right: 1px;
+    top: -2px;
+}
+.inner-banner-sec li:last-child::before{
+    display: none;
+}
+.inner-banner-sec li a {
+    color: #fff;
+}
+
+/* footer slider css */
+.footer-slider{
+    overflow: hidden;
+    width: 100%;
+    background: url(../img/footer-bg.png);
+    padding: 40px 0;
+}
+.footer-slider .flexslider{
+    border:0px;
+    background-color: transparent;
+    margin-bottom: 0px;
+}
+.footer-slider .flexslider .flex-direction-nav .flex-prev,
+.footer-slider .flexslider:hover .flex-direction-nav .flex-prev{
+    background: url(../img/left-arrow-g.png);
+    opacity: 1;
+    width: 67px;
+    height: 60px;
+    display: block;
+    color: transparent;
+    text-indent:-999999px;
+    left: -60px;
+}
+.footer-slider .flexslider .flex-direction-nav .flex-next,
+.footer-slider .flexslider:hover .flex-direction-nav .flex-next{
+    background: url(../img/right-arrow-g.png);
+    opacity: 1;
+    width: 67px;
+    height: 60px;
+    display: block;
+    color: transparent;
+    text-indent:-999999px;
+    text-align: left;
+    right: -70px;
+}
+.footer-slider .flexslider .flex-direction-nav a::before{
+    color: transparent;
+    text-indent: -999999px;
+}
+.footer-slider .flexslider .flex-direction-nav a.flex-disabled{
+    opacity: 1!important;
+}
+
+/* footer */
+
+.footer-wrapper{
+    background-color:#082554;
+    padding: 40px 0;
+}
+.footer-head{
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 18px;
+}
+ul.footer-menu{
+    padding: 0px;
+    margin: 0px;
+}
+ul.footer-menu li{
+    
+}
+ul.footer-menu li a{
+    color: #ffffffba;
+    display: block;
+    font-weight: normal;
+    margin-bottom: 7px;
+}
+
+.content-area{
+    min-height: 300px;
+    padding: 25px 10px;
+}
+.right-tabs{
+
+}
+.right-tabs ul{
+    padding: 0px;
+    background-color: #e0ecfe;
+}
+.right-tabs ul li{
+    list-style-type: none;
+    color: #252525;
+    padding: 11px 16px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.right-tabs ul li.active:before,
+.right-tabs ul li:hover:before{
+    content: '';
+    display: block;
+    background: #0c3169;
+    width: 4px;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
